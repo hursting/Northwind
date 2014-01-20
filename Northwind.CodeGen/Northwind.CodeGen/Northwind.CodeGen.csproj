@@ -81,7 +81,7 @@
     <Compile Include="Controllers\OrderController.cs">
       <DependentUpon>Controllers.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Order_DetailController.cs">
+    <Compile Include="Controllers\OrderDetailController.cs">
       <DependentUpon>Controllers.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\ProductController.cs">
@@ -93,10 +93,10 @@
     <Compile Include="Controllers\ShipperController.cs">
       <DependentUpon>Controllers.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Summary_of_Sales_by_QuarterController.cs">
+    <Compile Include="Controllers\SummaryofSalesbyQuarterController.cs">
       <DependentUpon>Controllers.tt</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Summary_of_Sales_by_YearController.cs">
+    <Compile Include="Controllers\SummaryofSalesbyYearController.cs">
       <DependentUpon>Controllers.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\SupplierController.cs">
@@ -137,7 +137,7 @@
     <Compile Include="Entities\Order.cs">
       <DependentUpon>Entity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\OrderDetail.cs">
+    <Compile Include="Entities\Order_Detail.cs">
       <DependentUpon>Entity.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Product.cs">
@@ -149,10 +149,10 @@
     <Compile Include="Entities\Shipper.cs">
       <DependentUpon>Entity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\SummaryofSalesbyQuarter.cs">
+    <Compile Include="Entities\Summary_of_Sales_by_Quarter.cs">
       <DependentUpon>Entity.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\SummaryofSalesbyYear.cs">
+    <Compile Include="Entities\Summary_of_Sales_by_Year.cs">
       <DependentUpon>Entity.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\Supplier.cs">

@@ -7,8 +7,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Northwind.Core;
+using Northwind.CodeGen;
 using Northwind.Data.Repository.Mappings;
+using Category = Northwind.Core.Category;
+using Customer = Northwind.Core.Customer;
+using CustomerDemographic = Northwind.Core.CustomerDemographic;
+using Employee = Northwind.Core.Employee;
+using Order = Northwind.Core.Order;
+using Product = Northwind.Core.Product;
+using Region = Northwind.Core.Region;
+using Shipper = Northwind.Core.Shipper;
+using Supplier = Northwind.Core.Supplier;
+using sysdiagram = Northwind.Core.sysdiagram;
+using Territory = Northwind.Core.Territory;
 
 namespace Northwind.Data.Repository
 {

@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/boostrap")
+
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
-
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+        @Html.Partial("_NavBar")
+        @RenderBody()
+        @Html.Partial("_Footer")
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+   
 </body>
 </html>

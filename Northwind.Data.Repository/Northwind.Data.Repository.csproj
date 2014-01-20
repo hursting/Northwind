@@ -30,7 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,10 +47,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mappings\CategoryMap.cs" />
+    <Compile Include="Mappings\CustomerDemographicMap.cs" />
+    <Compile Include="Mappings\CustomerMap.cs" />
+    <Compile Include="Mappings\EmployeeMap.cs" />
+    <Compile Include="Mappings\Mapping.cs" />
+    <Compile Include="Mappings\OrderMap.cs" />
+    <Compile Include="Mappings\Order_DetailMap.cs" />
+    <Compile Include="Mappings\ProductMap.cs" />
+    <Compile Include="Mappings\RegionMap.cs" />
+    <Compile Include="Mappings\ShipperMap.cs" />
+    <Compile Include="Mappings\SupplierMap.cs" />
+    <Compile Include="Mappings\TerritoryMap.cs" />
+    <Compile Include="NorthwindContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mappings\" />
+    <ProjectReference Include="..\Northwind.Core\Northwind.Core.csproj">
+      <Project>{1261f422-6687-4be0-b2d7-7940580a9dac}</Project>
+      <Name>Northwind.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\Repository.csproj">
+      <Project>{6e682a14-c872-4813-b620-76e108dea683}</Project>
+      <Name>Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

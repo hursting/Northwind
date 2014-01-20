@@ -23,7 +23,7 @@ WriteHeader(fileManager);
 
 foreach (EntityType entity in itemCollection.GetItems<EntityType>().OrderBy(e => e.Name))
 {
-    fileManager.StartNewFile(entity.Name.Replace("_","").Trim() + mapClassSuffix + ".cs");
+    fileManager.StartNewFile(entity.Name + mapClassSuffix + ".cs");
     BeginNamespace("Northwind.Data.Repository.Mappings", code);   
 #>
 using System;
@@ -35,7 +35,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.Infrastructure;
 using Northwind.Core;
 
-public partial class <#=code.Escape(entity) + mapClassSuffix#><#=string.Format(" : EntityTypeConfiguration<{0}>", code.Escape(entity.Name.Replace("_","").Trim()))#>
+public partial class <#=code.Escape(entity) + mapClassSuffix#><#=string.Format(" : EntityTypeConfiguration<{0}>", code.Escape(entity.Name))#>
 {
     public <#=code.Escape(entity) + mapClassSuffix#>()
     {                        
